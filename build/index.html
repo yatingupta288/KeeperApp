@@ -1,0 +1,46 @@
+Html Webpack Plugin:
+<pre>
+  Error: html-webpack-plugin could not minify the generated output.
+  In production mode the html minifcation is enabled by default.
+  If you are not generating a valid html output please disable it manually.
+  You can do so by adding the following setting to your HtmlWebpackPlugin config:
+  |
+  |    minify: false
+  |
+  See https://github.com/jantimon/html-webpack-plugin#options for details.
+  For parser dedicated bugs please create an issue here:
+  https://danielruf.github.io/html-minifier-terser/
+  Parse Error: <link font-family: "Montserrat", sans-serif;
+      href="https://fonts.googleapis.com/css?family=McLaren|Montserrat&display=swap"
+      rel="stylesheet" />
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <div id="root"></div>
+      <script src="../src/index.js" type="text/jsx"></script>
+    <script>!function(e){function r(r){for(var n,u,l=r[0],a=r[1],f=r[2],c=0,s=[];c<l.length;c++)u=l[c],Object.prototype.  hasOwnProperty.call(o,u)&&o[u]&&s.push(o[u][0]),o[u]=0;for(n in a)Object.prototype.hasOwnProperty.call(a,n)&&(e[n]=a[n  ]);for(i&&i(r);s.length;)s.shift()();return p.push.apply(p,f||[]),t()}function t(){for(var e,r=0;r<p.length;r++){for(v  ar t=p[r],n=!0,l=1;l<t.length;l++){var a=t[l];0!==o[a]&&(n=!1)}n&&(p.splice(r--,1),e=u(u.s=t[0]))}return e}var n={},o=  {1:0},p=[];function u(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.e  xports,u),t.l=!0,t.exports}u.m=e,u.c=n,u.d=function(e,r,t){u.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})}  ,u.r=function(e){"undefined"!==typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"M  odule"}),Object.defineProperty(e,"__esModule",{value:!0})},u.t=function(e,r){if(1&r&&(e=u(e)),8&r)return e;if(4&r&&"ob  ject"===typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(u.r(t),Object.defineProperty(t,"default",{enum  erable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)u.d(t,n,function(r){return e[r]}.bind(null,n));return t},u.  n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return u.d(r,"a",r),r},u.o=funct  ion(e,r){return Object.prototype.hasOwnProperty.call(e,r)},u.p="/keeperApp/";var l=this["webpackJsonpkeeper-app.2"]=th  is["webpackJsonpkeeper-app.2"]||[],a=l.push.bind(l);l.push=r,l=l.slice();for(var f=0;f<l.length;f++)r(l[f]);var i=a;t(  )}([]);
+  //# sourceMappingURL=runtime-main.482ccff8.js.map</script><script src="/keeperApp/static/js/2.0d1a3848.chunk.js"></scr  ipt><script src="/keeperApp/static/js/main.3e05866a.chunk.js"></script></body>
+  </html>
+  
+  - htmlparser.js:244 new HTMLParser
+    [keeper-app.2]/[html-minifier-terser]/src/htmlparser.js:244:13
+  
+  - htmlminifier.js:993 minify
+    [keeper-app.2]/[html-minifier-terser]/src/htmlminifier.js:993:3
+  
+  - htmlminifier.js:1354 Object.exports.minify
+    [keeper-app.2]/[html-minifier-terser]/src/htmlminifier.js:1354:16
+  
+  - index.js:1013 HtmlWebpackPlugin.minifyHtml
+    [keeper-app.2]/[html-webpack-plugin]/index.js:1013:46
+  
+  - index.js:429 HtmlWebpackPlugin.postProcessHtml
+    [keeper-app.2]/[html-webpack-plugin]/index.js:429:40
+  
+  - index.js:254 
+    [keeper-app.2]/[html-webpack-plugin]/index.js:254:25
+  
+  - task_queues.js:95 processTicksAndRejections
+    internal/process/task_queues.js:95:5
+  
+</pre>
